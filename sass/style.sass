@@ -1,0 +1,116 @@
+$white: #fff
+$black: black
+$pink : #ff5a5f
+select,option
+  font-family: 'FontAwesome'
+*
+  box-sizing: border-box
+  font-family: 'Roboto', Helvetica
+
+body,html
+  margin: 0
+  padding: 0
+
+a
+  text-decoration: none
+  color: $white
+  display: inline-block
+
+header
+  display: flex
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('http://lorempixel.com/900/800/nature')
+  background-position: center
+  background-size: cover
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
+  padding: 10px 0 0px 0
+  height: 400px
+
+  nav
+    display: flex
+    width: 100%
+    justify-content: space-between
+    align-items: baseline
+    padding: 5px
+    flex-wrap: wrap
+  ul
+    list-style: none
+    margin: 0
+    padding: 0
+    flex-grow: 0
+    flex-shrink: 0
+    #first-item-nav
+      border: 2px solid $white
+      border-radius: 5px
+      &:hover
+        background-color: rgba($white, 0.2) 
+  li
+    display: inline-block
+    a
+      padding: 10px
+
+  .logo
+    flex-grow: 2
+    flex-shrink: 1
+    font-size: 23px
+    a
+      span
+        color: $pink
+
+  .kicker
+    color: $white
+    text-align: center
+    h1,p
+      margin: 0
+      line-height: 1.7
+    a
+      background-color: rgba($white,0.5)
+      padding: 10px 20px
+      margin-top: 10px
+      &:hover
+        background-color: rgba($black,0.5)
+
+  .navbar-search
+    width: 100%
+    display: flex
+    justify-content: center
+    padding: 20px 0
+    margin-top: 30px
+    background-color: rgba($black,0.3)
+    .border-radius-left
+      border-radius: 3px 0 0 3px
+    .border-radius-right
+      border-radius: 0 3px 3px 0
+    *
+      float: left
+    input
+      border: none
+      padding: 10px
+      border-right: 1px solid #ccc
+      &:focus,:active
+        box-shadow: none
+        outline: none
+    select
+      -webkit-appearance: none
+      -moz-appearance: none
+      -ms-appearance: none
+      appearance: none
+      font-weight: lighter
+      color: #ccc
+      padding: 10px 15px
+      border-radius: 0
+      border: none
+      line-height: 1.2
+      &:focus, :active
+        box-shadow: none
+        outline: none
+    button
+      border: none
+      background-color: $pink
+      color: #fff
+      padding: 10px 20px
+      &:focus,:active
+        outline: none
+      &:hover
+        background-color: rgba($pink, 0.9)

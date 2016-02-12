@@ -1,0 +1,165 @@
+/* line 4, ../sass/style.sass */
+select, option {
+  font-family: "FontAwesome";
+}
+
+/* line 6, ../sass/style.sass */
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", Helvetica;
+}
+
+/* line 10, ../sass/style.sass */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 14, ../sass/style.sass */
+a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+}
+
+/* line 19, ../sass/style.sass */
+header {
+  display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://lorempixel.com/900/800/nature");
+  background-position: center;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0 0px 0;
+  height: 400px;
+}
+/* line 30, ../sass/style.sass */
+header nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+/* line 37, ../sass/style.sass */
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+/* line 43, ../sass/style.sass */
+header ul #first-item-nav {
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+/* line 46, ../sass/style.sass */
+header ul #first-item-nav:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+/* line 48, ../sass/style.sass */
+header li {
+  display: inline-block;
+}
+/* line 50, ../sass/style.sass */
+header li a {
+  padding: 10px;
+}
+/* line 53, ../sass/style.sass */
+header .logo {
+  flex-grow: 2;
+  flex-shrink: 1;
+  font-size: 23px;
+}
+/* line 58, ../sass/style.sass */
+header .logo a span {
+  color: #ff5a5f;
+}
+/* line 61, ../sass/style.sass */
+header .kicker {
+  color: #fff;
+  text-align: center;
+}
+/* line 64, ../sass/style.sass */
+header .kicker h1, header .kicker p {
+  margin: 0;
+  line-height: 1.7;
+}
+/* line 67, ../sass/style.sass */
+header .kicker a {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+/* line 71, ../sass/style.sass */
+header .kicker a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* line 74, ../sass/style.sass */
+header .navbar-search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  margin-top: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/* line 81, ../sass/style.sass */
+header .navbar-search .border-radius-left {
+  border-radius: 3px 0 0 3px;
+}
+/* line 83, ../sass/style.sass */
+header .navbar-search .border-radius-right {
+  border-radius: 0 3px 3px 0;
+}
+/* line 85, ../sass/style.sass */
+header .navbar-search * {
+  float: left;
+}
+/* line 87, ../sass/style.sass */
+header .navbar-search input {
+  border: none;
+  padding: 10px;
+  border-right: 1px solid #ccc;
+}
+/* line 91, ../sass/style.sass */
+header .navbar-search input:focus, header .navbar-search input :active {
+  box-shadow: none;
+  outline: none;
+}
+/* line 94, ../sass/style.sass */
+header .navbar-search select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  font-weight: lighter;
+  color: #ccc;
+  padding: 10px 15px;
+  border-radius: 0;
+  border: none;
+  line-height: 1.2;
+}
+/* line 105, ../sass/style.sass */
+header .navbar-search select:focus, header .navbar-search select :active {
+  box-shadow: none;
+  outline: none;
+}
+/* line 108, ../sass/style.sass */
+header .navbar-search button {
+  border: none;
+  background-color: #ff5a5f;
+  color: #fff;
+  padding: 10px 20px;
+}
+/* line 113, ../sass/style.sass */
+header .navbar-search button:focus, header .navbar-search button :active {
+  outline: none;
+}
+/* line 115, ../sass/style.sass */
+header .navbar-search button:hover {
+  background-color: rgba(255, 90, 95, 0.9);
+}
