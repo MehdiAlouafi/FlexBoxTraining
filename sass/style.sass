@@ -5,6 +5,7 @@ $grey_text: #565a5c
 select,option
   font-family: 'FontAwesome'
 *
+  -webkit-box-sizing: border-box
   box-sizing: border-box
   font-family: 'Roboto', Helvetica
 
@@ -46,6 +47,7 @@ header
     #first-item-nav
       border: 2px solid $white
       border-radius: 5px
+      transition: background-color 0.3s ease
       &:hover
         background-color: rgba($white, 0.2)
   li
@@ -62,9 +64,9 @@ header
         color: $pink
       img
         width: 40px
-        height: 40px
+        height: 30px
         position: relative
-        top: 10px
+        top: 3px
 
   .kicker
     color: $white
@@ -76,6 +78,8 @@ header
       background-color: rgba($white,0.5)
       padding: 10px 20px
       margin-top: 10px
+      border-radius: 3px
+      transition: background-color 0.3s ease
       &:hover
         background-color: rgba($black,0.5)
 
@@ -168,3 +172,56 @@ header
       border-radius: 3px
       &:hover
         background-color: rgba($pink,0.8)
+
+.text-center
+  text-align: center
+  color: $grey_text
+h2.text-center
+  font-size: 30px
+  margin: 80px 0 0 0
+  line-height: 2
+p.text-center
+  margin: 0
+
+.second-block-content
+  width: 850px
+  max-width: 80%
+  margin: 50px auto
+  display: flex
+  flex-wrap: wrap
+  .img-second-block
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    margin-right: 0
+    // margin-right: 10px
+    // Essaye de trouver un moyen de rajouter ces foutues marge stp
+    height: 350px
+    display: flex
+    justify-content: center
+    align-items: center
+    color: $white
+    &:nth-child(3)
+      margin-right: 0
+    &.lille
+      background-image: url('../images/lille.jpeg')
+      flex: 1 0 280px
+    &.bruxelles
+      background-image: url('../images/bruxelles.jpeg')
+      flex: 1 0 280px
+    &.londres
+      background-image: url('../images/londres.jpeg')
+      flex: 1 0 280px
+  .button
+    color: $grey_text
+    text-align: center
+    background-color: $white
+    border: 1px solid rgba($grey_text, 0.3)
+    flex-grow: 1
+    padding: 10px 50px
+    margin-top: 30px
+    transition: border 0.3s ease
+    font-weight: bolder
+    flex-basis: 100%
+    &:hover
+      border: 1px solid rgba($grey_text, 0.6)
