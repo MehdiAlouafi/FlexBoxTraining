@@ -1,6 +1,7 @@
 $white: #fff
 $black: black
 $pink : #ff5a5f
+$grey_text: #565a5c
 select,option
   font-family: 'FontAwesome'
 *
@@ -10,6 +11,8 @@ select,option
 body,html
   margin: 0
   padding: 0
+  padding-bottom: 40px
+  background-color: #EDEFED
 
 a
   text-decoration: none
@@ -57,6 +60,11 @@ header
     a
       span
         color: $pink
+      img
+        width: 40px
+        height: 40px
+        position: relative
+        top: 10px
 
   .kicker
     color: $white
@@ -114,3 +122,49 @@ header
         outline: none
       &:hover
         background-color: rgba($pink, 0.9)
+
+.first-block-content
+  width: 850px
+  max-width: 80%
+  background-color: $white
+  margin: 0 auto
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  // align-items: stretch
+  // height: 350px
+  margin-top: 50px
+  .img-div-left
+    background-image: url('http://lorempixel.com/900/900/nature')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    color: $white
+    padding: 100px 0px
+    flex: 1 0 65%
+    display: flex
+    align-items: center
+    justify-content: center
+  .text-div-right
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    text-align: center
+    padding: 90px 40px
+    color: $grey_text
+    h2
+      margin: 0
+      font-size: 20px
+      font-weight: lighter
+    p
+      font-size: 30px
+      display: inline-block
+      font-weight: bolder
+    .button
+      background-color: $pink
+      color: #fff
+      padding: 10px 20px
+      border-radius: 3px
+      &:hover
+        background-color: rgba($pink,0.8)
