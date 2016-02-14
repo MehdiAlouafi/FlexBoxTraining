@@ -216,20 +216,24 @@ p.text-center
       background-image: url('../images/londres.jpeg')
       flex: 1 0 280px
       margin: 10px
-  .button
-    color: $grey_text
-    text-align: center
-    background-color: $white
-    border: 1px solid rgba($grey_text, 0.3)
-    flex-grow: 0
-    width: 300px
-    padding: 10px 50px
-    margin-top: 30px
-    transition: border 0.3s ease
-    font-weight: bolder
-    // flex-basis: 100%
-    &:hover
-      border: 1px solid rgba($grey_text, 0.6)
+  .button-container
+    flex-basis: 100%
+    display: flex
+    justify-content: center
+    .button
+      color: $grey_text
+      text-align: center
+      background-color: $white
+      border: 1px solid rgba($grey_text, 0.3)
+      // flex-grow: 0
+      width: 300px
+      padding: 10px 50px
+      margin-top: 30px
+      transition: border 0.3s ease
+      font-weight: bolder
+      // flex-basis: 100%
+      &:hover
+        border: 1px solid rgba($grey_text, 0.6)
 
 .my-flex-box
   max-width: 1000px
@@ -268,3 +272,100 @@ p.text-center
     &.img8
     &.img9
     &.img10
+
+.item
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+  .slide1
+    background-image: url('../images/slide1.jpg')
+    color: $white
+    display: flex
+    flex-flow: column nowrap
+    justify-content: center
+    *
+      text-shadow: none
+    h1
+      font-size: 70px
+      margin: 0
+    p
+      font-size: 30px
+    a
+      font-size: 90px
+      transform: scale(0.8)
+      color: rgba($white,0.7)
+      text-shadow: none
+      transition: all 0.4s ease-in-out
+      &:hover
+        transform: scale(1)
+        color: $white
+
+.slide2
+  background-image: url('../images/slide2.jpg')
+  background-size: cover
+  display: flex
+  flex-flow: column nowrap
+  justify-content: center
+  *
+    text-shadow: none
+  h1
+    font-size: 70px
+    margin: 0
+  p
+    font-size: 30px
+  a
+    font-size: 90px
+    transform: scale(0.8)
+    color: rgba($white,0.7)
+    text-shadow: none
+    transition: all 0.4s ease-in-out
+    &:hover
+      transform: scale(1)
+      color: $white
+.slide3
+  background-image: url('../images/slide3.jpg')
+  background-size: cover
+  background-position: 100% 100%
+  display: flex
+  flex-flow: column nowrap
+  justify-content: center
+  *
+    text-shadow: none
+  h1
+    font-size: 70px
+    margin: 0
+  p
+    font-size: 30px
+  a
+    font-size: 90px
+    transform: scale(0.8)
+    color: rgba($white,0.7)
+    text-shadow: none
+    transition: all 0.4s ease-in-out
+    &:hover
+      transform: scale(1)
+      color: $white
+
+.carousel
+  height: 600px
+  width: 100%
+  &.slide
+    margin-top: 80px
+  .carousel-inner
+    height: 100%
+    width: 100%
+    .carousel-caption
+      position: relative
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      height: 100%
+    .item
+      height: 100%
+      width: 100%
+      color: black
+a.carousel-control
+  transition: all 0.3s ease
+h2.text-center.bottom
+  margin-top: 30px
