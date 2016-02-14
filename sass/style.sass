@@ -189,6 +189,7 @@ p.text-center
   margin: 50px auto
   display: flex
   flex-wrap: wrap
+  justify-content: space-between
   .img-second-block
     background-position: center
     background-size: cover
@@ -225,3 +226,49 @@ p.text-center
     flex-basis: 100%
     &:hover
       border: 1px solid rgba($grey_text, 0.6)
+
+.my-flex-box
+  width: 850px
+  max-width: 80%
+  margin: 0 auto
+  background-color: white
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  height: 100%
+  *
+    flex-grow: 1
+    background-color: blue
+    height: 250px
+  .img1
+    flex: 1 0 470px
+    background-color: red
+  .img2
+    flex: 0 0 257px
+    background-color: yellowgreen
+    margin-left: 40px
+
+  .img3
+    flex: 1 0 240px
+    margin-right: 40px
+    background-color: HotPink
+  .img4
+    flex: 1 0 240px
+    margin-right: 40px
+    background-color: DeepSkyBlue
+    border-right: 20px solid transparent
+  .img5
+    flex: 1 0 240px
+    background-color: #2D2D2D
+    border-right: 20px solid transparent
+    align-items: flex-end
+  .img6
+    flex: 1 0 340px
+    background-color: $pink
+  .img7
+    flex: 1 0 510px
+    background-color: DimGray
+  .img8,.img9,.img10
+    flex: 1 0 280px
+    background-color: white
+    border-right: 20px solid black
