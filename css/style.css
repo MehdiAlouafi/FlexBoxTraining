@@ -255,12 +255,12 @@ p.text-center {
 
 /* line 186, ../sass/style.sass */
 .second-block-content {
-  width: 850px;
+  width: 950px;
   max-width: 80%;
   margin: 50px auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 /* line 193, ../sass/style.sass */
 .second-block-content .img-second-block {
@@ -282,96 +282,83 @@ p.text-center {
 .second-block-content .img-second-block.lille {
   background-image: url("../images/lille.jpeg");
   flex: 1 0 280px;
+  margin: 10px;
 }
-/* line 210, ../sass/style.sass */
+/* line 211, ../sass/style.sass */
 .second-block-content .img-second-block.bruxelles {
   background-image: url("../images/bruxelles.jpeg");
   flex: 1 0 280px;
+  margin: 10px;
 }
-/* line 213, ../sass/style.sass */
+/* line 215, ../sass/style.sass */
 .second-block-content .img-second-block.londres {
   background-image: url("../images/londres.jpeg");
   flex: 1 0 280px;
+  margin: 10px;
 }
-/* line 216, ../sass/style.sass */
+/* line 219, ../sass/style.sass */
 .second-block-content .button {
   color: #565a5c;
   text-align: center;
   background-color: #fff;
   border: 1px solid rgba(86, 90, 92, 0.3);
-  flex-grow: 1;
+  flex-grow: 0;
+  width: 300px;
   padding: 10px 50px;
   margin-top: 30px;
   transition: border 0.3s ease;
   font-weight: bolder;
-  flex-basis: 100%;
 }
-/* line 227, ../sass/style.sass */
+/* line 231, ../sass/style.sass */
 .second-block-content .button:hover {
   border: 1px solid rgba(86, 90, 92, 0.6);
 }
 
-/* line 230, ../sass/style.sass */
+/* line 234, ../sass/style.sass */
 .my-flex-box {
-  width: 850px;
-  max-width: 80%;
+  max-width: 1000px;
   margin: 0 auto;
   background-color: white;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-flow: row wrap;
   height: 100%;
 }
-/* line 239, ../sass/style.sass */
-.my-flex-box * {
-  flex-grow: 1;
-  background-color: blue;
-  height: 250px;
-}
-/* line 243, ../sass/style.sass */
-.my-flex-box .img1 {
-  flex: 1 0 470px;
-  background-color: red;
-}
-/* line 246, ../sass/style.sass */
-.my-flex-box .img2 {
-  flex: 0 0 257px;
-  background-color: yellowgreen;
-  margin-left: 40px;
-}
-/* line 251, ../sass/style.sass */
-.my-flex-box .img3 {
-  flex: 1 0 240px;
-  margin-right: 40px;
-  background-color: HotPink;
-}
-/* line 255, ../sass/style.sass */
-.my-flex-box .img4 {
-  flex: 1 0 240px;
-  margin-right: 40px;
-  background-color: DeepSkyBlue;
-  border-right: 20px solid transparent;
-}
-/* line 260, ../sass/style.sass */
-.my-flex-box .img5 {
-  flex: 1 0 240px;
-  background-color: #2D2D2D;
-  border-right: 20px solid transparent;
-  align-items: flex-end;
-}
-/* line 265, ../sass/style.sass */
-.my-flex-box .img6 {
-  flex: 1 0 340px;
+/* line 242, ../sass/style.sass */
+.my-flex-box .img {
+  height: 350px;
+  min-width: 310px;
+  margin: 10px;
   background-color: #ff5a5f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 30px;
+  flex: 1 1 2%;
+  min-width: 313px;
 }
-/* line 268, ../sass/style.sass */
-.my-flex-box .img7 {
-  flex: 1 0 510px;
-  background-color: DimGray;
+/* line 252, ../sass/style.sass */
+.my-flex-box .img.img1 {
+  flex: 1 1 60%;
 }
-/* line 271, ../sass/style.sass */
-.my-flex-box .img8, .my-flex-box .img9, .my-flex-box .img10 {
-  flex: 1 0 280px;
-  background-color: white;
-  border-right: 20px solid black;
+/* line 257, ../sass/style.sass */
+.my-flex-box .img.img3 {
+  flex: 1 1 25px;
+}
+/* line 259, ../sass/style.sass */
+.my-flex-box .img.img4 {
+  flex: 1 1 25px;
+}
+/* line 261, ../sass/style.sass */
+.my-flex-box .img.img5 {
+  flex: 1 1 25px;
+}
+/* line 263, ../sass/style.sass */
+.my-flex-box .img.img6 {
+  flex: 1 1 2%;
+  min-width: 313px;
+}
+/* line 266, ../sass/style.sass */
+.my-flex-box .img.img7 {
+  flex: 1 1 60%;
 }
