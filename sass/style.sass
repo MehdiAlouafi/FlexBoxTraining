@@ -448,3 +448,91 @@ h2.text-center.bottom
     background-color: #393c3d
   &.button-pink
     background-color: #7b0051
+
+footer
+  background-image: url('../images/background.png')
+  background-size: contain
+  background-color: #2b2d2e
+  min-height: 500px
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: center
+  padding-top: 50px
+  color: $white
+
+  .selecta
+    display: flex
+    flex-direction: column
+    flex-grow: 1
+    select
+      -webkit-appearance: none
+      -moz-appearance: none
+      -ms-appearance: none
+      appearance: none
+      background-color: #565A5C
+      padding: 10px
+      border: none
+      border-radius: 0
+
+    *
+      margin: 10px
+  .plan-site-footer
+    display: flex
+    justify-content: center
+    padding-bottom: 10px
+    border-bottom: 1px solid rgba($white,0.3)
+    .title-li
+      margin-bottom: 20px
+      font-size: 18px
+
+    ul,li
+      margin: 0
+      padding: 0
+      list-style: none
+    ul
+      padding: 20px
+      flex-basis: 23%
+    ul:first-of-type
+      // flex-basis: 23%
+  .social-links
+    padding-top: 20px
+    display: flex
+    .icon-rounded
+      margin: 10px
+      padding: 10px
+      height: 40px
+      width: 40px
+      text-align: center
+      border-radius: 50%
+      border: 1px solid #565A5C
+      cursor: pointer
+      transition: all 1s ease-in-out
+      &.twitter:hover
+        border-color: #3498db
+        color: #3498db
+        transition: all 0s ease-in-out
+      &.facebook:hover
+        border-color: #2980b9
+        color: #2980b9
+        transition: all 0s ease-in-out
+
+      &.google:hover
+        border-color: #e74c3c
+        color: #e74c3c
+        transition: all 0s ease-in-out
+
+      &.github:hover
+        border-color: #34495e
+        color: #34495e
+        transition: all 0s ease-in-out
+
+      &.linkedin:hover
+        border-color: #95a5a6
+        color: #95a5a6
+        transition: all 0s ease-in-out
+
+      &.pinterest:hover
+        border-color: #c0392b
+        color: #c0392b
+        transition: all 0s ease-in-out

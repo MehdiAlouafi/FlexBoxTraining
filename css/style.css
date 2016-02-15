@@ -626,3 +626,114 @@ h2.text-center.bottom {
 .button-green.button-pink {
   background-color: #7b0051;
 }
+
+/* line 452, ../sass/style.sass */
+footer {
+  background-image: url("../images/background.png");
+  background-size: contain;
+  background-color: #2b2d2e;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 50px;
+  color: #fff;
+}
+/* line 464, ../sass/style.sass */
+footer .selecta {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+/* line 468, ../sass/style.sass */
+footer .selecta select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: #565A5C;
+  padding: 10px;
+  border: none;
+  border-radius: 0;
+}
+/* line 478, ../sass/style.sass */
+footer .selecta * {
+  margin: 10px;
+}
+/* line 480, ../sass/style.sass */
+footer .plan-site-footer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+/* line 485, ../sass/style.sass */
+footer .plan-site-footer .title-li {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+/* line 489, ../sass/style.sass */
+footer .plan-site-footer ul, footer .plan-site-footer li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 493, ../sass/style.sass */
+footer .plan-site-footer ul {
+  padding: 20px;
+  flex-basis: 23%;
+}
+/* line 498, ../sass/style.sass */
+footer .social-links {
+  padding-top: 20px;
+  display: flex;
+}
+/* line 501, ../sass/style.sass */
+footer .social-links .icon-rounded {
+  margin: 10px;
+  padding: 10px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #565A5C;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+/* line 511, ../sass/style.sass */
+footer .social-links .icon-rounded.twitter:hover {
+  border-color: #3498db;
+  color: #3498db;
+  transition: all 0s ease-in-out;
+}
+/* line 515, ../sass/style.sass */
+footer .social-links .icon-rounded.facebook:hover {
+  border-color: #2980b9;
+  color: #2980b9;
+  transition: all 0s ease-in-out;
+}
+/* line 520, ../sass/style.sass */
+footer .social-links .icon-rounded.google:hover {
+  border-color: #e74c3c;
+  color: #e74c3c;
+  transition: all 0s ease-in-out;
+}
+/* line 525, ../sass/style.sass */
+footer .social-links .icon-rounded.github:hover {
+  border-color: #34495e;
+  color: #34495e;
+  transition: all 0s ease-in-out;
+}
+/* line 530, ../sass/style.sass */
+footer .social-links .icon-rounded.linkedin:hover {
+  border-color: #95a5a6;
+  color: #95a5a6;
+  transition: all 0s ease-in-out;
+}
+/* line 535, ../sass/style.sass */
+footer .social-links .icon-rounded.pinterest:hover {
+  border-color: #c0392b;
+  color: #c0392b;
+  transition: all 0s ease-in-out;
+}
