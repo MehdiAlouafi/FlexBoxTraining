@@ -521,3 +521,108 @@ a.carousel-control {
 h2.text-center.bottom {
   margin-top: 30px;
 }
+
+/* line 374, ../sass/style.sass */
+.fourth-block-square {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+/* line 379, ../sass/style.sass */
+.fourth-block-square .square {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 492px;
+  width: 345px;
+  background-color: blue;
+  margin: 10px;
+  cursor: pointer;
+  color: #fff;
+  flex: 0 1 300px;
+}
+/* line 390, ../sass/style.sass */
+.fourth-block-square .square.square1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #00d1c1;
+}
+/* line 396, ../sass/style.sass */
+.fourth-block-square .square.square1 img {
+  position: relative;
+  z-index: 9999;
+}
+/* line 399, ../sass/style.sass */
+.fourth-block-square .square::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  transition: all 0.2s ease-in-out;
+}
+/* line 408, ../sass/style.sass */
+.fourth-block-square .square:hover::after {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/* line 410, ../sass/style.sass */
+.fourth-block-square .square.square2 {
+  background-image: url("../images/square2.jpg");
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 80px;
+}
+/* line 417, ../sass/style.sass */
+.fourth-block-square .square.square2 span {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+/* line 423, ../sass/style.sass */
+.fourth-block-square .square.square3 {
+  background-image: url("../images/square3.jpg");
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 430, ../sass/style.sass */
+.fourth-block-square .square.square3 h2 {
+  flex-grow: 1;
+}
+/* line 433, ../sass/style.sass */
+.fourth-block-square .square.square4 {
+  background-image: url("../images/square4.jpg");
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 440, ../sass/style.sass */
+.fourth-block-square .square.square4 h2 {
+  flex-grow: 1;
+}
+
+/* line 444, ../sass/style.sass */
+.button-green {
+  padding: 10px 15px;
+  background-color: #007a87;
+}
+/* line 447, ../sass/style.sass */
+.button-green.button-black {
+  background-color: #393c3d;
+}
+/* line 449, ../sass/style.sass */
+.button-green.button-pink {
+  background-color: #7b0051;
+}

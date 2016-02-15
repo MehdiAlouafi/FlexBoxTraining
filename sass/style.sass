@@ -371,3 +371,80 @@ a.carousel-control
   transition: all 0.3s ease
 h2.text-center.bottom
   margin-top: 30px
+.fourth-block-square
+  display: flex
+  justify-content: center
+  flex-flow: row wrap
+  width: 100%
+  .square
+    position: relative
+    background-size: cover
+    background-position: center
+    height: 492px
+    width: 345px
+    background-color: blue
+    margin: 10px
+    cursor: pointer
+    color: $white
+    flex: 0 1 300px
+    &.square1
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      background-color: #00d1c1
+      img
+        position: relative
+        z-index: 9999
+    &::after
+      content: " "
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      z-index: 5
+      transition: all 0.2s ease-in-out
+    &:hover::after
+      background-color: rgba(black,0.2)
+    &.square2
+      background-image: url('../images/square2.jpg')
+      display: flex
+      justify-content: space-between
+      align-items: center
+      flex-direction: column
+      padding-bottom: 80px
+      span
+        display: flex
+        justify-content: center
+        align-items: flex-end
+        flex-direction: column
+
+    &.square3
+      background-image: url('../images/square3.jpg')
+      padding-bottom: 80px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: center
+      h2
+        flex-grow: 1
+
+    &.square4
+      background-image: url('../images/square4.jpg')
+      padding-bottom: 80px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: center
+      h2
+        flex-grow: 1
+
+
+.button-green
+  padding: 10px 15px
+  background-color: #007a87
+  &.button-black
+    background-color: #393c3d
+  &.button-pink
+    background-color: #7b0051
