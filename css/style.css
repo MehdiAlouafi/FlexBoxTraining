@@ -333,7 +333,7 @@ p.text-center {
 /* line 248, ../sass/style.sass */
 .my-flex-box .img {
   height: 350px;
-  min-width: 310px;
+  max-width: 310px;
   margin: 10px;
   background-color: #ff5a5f;
   display: flex;
